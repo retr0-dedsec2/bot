@@ -53,7 +53,7 @@ def check_code(code):
 
 
 def run_flask():
-    flask_app.run(port=10000)
+    flask_app.run(host='0.0.0.0', port=10000)
 
 
 if __name__ == "__main__":
