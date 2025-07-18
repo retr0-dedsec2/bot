@@ -58,4 +58,6 @@ def run_flask():
 
 if __name__ == "__main__":
     threading.Thread(target=run_flask, daemon=True).start()
-    bot.run("MTM5NTc3NDg4NDI5MzkwNjUwMg.GNGrPO.0P086pSb2TnCaNJBxjTUuV1eJDAKgYAuiijUCk")
+    with open('token.txt', 'r') as f:
+        contenu = f.read()
+    bot.run(contenu)
